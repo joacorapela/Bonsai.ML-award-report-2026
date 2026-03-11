@@ -48,9 +48,9 @@ We have validated the decoder across several experimental contexts, transitionin
 
 The ability to estimate models online facilitates closed-loop neuroscience, such as the immediate detection and disruption of hippocampal replay events to investigate their causal role in behavior. To ensure the high performance required for these low-latency applications, the decoder was natively implemented in C# using the Bonsai.ML.Torch package, leveraging GPU acceleration for efficient computation. Detailed technical overviews can be found at: https://bonsai-rx.org/machinelearning/articles/Torch/torch-overview.html
 
-## Native Implementation of Linear Dynamical Systems (LinearDynamicalSystems.Torch)
+## Native Implementation of Linear Dynamical Systems (Lds.Torch)
 
-We have successfully developed and released LinearDynamicalSystems.Torch, a native C# implementation of Linear Dynamical Systems (LDS) built on the TorchSharp engine. This represents a major technical evolution from our previous iteration, which relied on external Python backends. By eliminating the overhead of Python interoperation, the new package allows for high-efficiency parameter estimation and latent variable inference directly within the Bonsai environment.
+We have successfully developed and released Lds.Torch, a native C# implementation of Linear Dynamical Systems (LDS) built on the TorchSharp engine. This represents a major technical evolution from our previous iteration, which relied on external Python backends. By eliminating the overhead of Python interoperation, the new package allows for high-efficiency parameter estimation and latent variable inference directly within the Bonsai environment.
 
 Validation and Documentation:
 
