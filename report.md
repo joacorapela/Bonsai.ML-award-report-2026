@@ -18,7 +18,6 @@ Strategic Network Expansion: This visit established a direct conduit to the Sign
 
 Collaborative Roadmap: This engagement has opened a formal dialogue with reactive inference experts, providing our team with high-level theoretical guidance that will inform the future development of the Bonsai.ML codebase, particularly regarding variational inference in real-time streams.
 
-
 ---
 
 # Software
@@ -48,6 +47,26 @@ We have validated the decoder across several experimental contexts, transitionin
 ### Scientific and Technical Impact
 
 The ability to estimate models online facilitates closed-loop neuroscience, such as the immediate detection and disruption of hippocampal replay events to investigate their causal role in behavior. To ensure the high performance required for these low-latency applications, the decoder was natively implemented in C# using the Bonsai.ML.Torch package, leveraging GPU acceleration for efficient computation. Detailed technical overviews can be found at: https://bonsai-rx.org/machinelearning/articles/Torch/torch-overview.html
+
+## Torch package for learning and inference in Linear Dynamical System (LinearDynamicalSystems.Torch) created
+
+We have previously developed a Linear Dynamical Systems package in Bonsai that used a backend Python package https://github.com/joacorapela/ssm. We have now created a native C# (TorchSharp) implementation of this package and demonstrated it for the estimation of latent variables underlying high-channel-count electrophysiological recordings https://ncguilbeault.github.io/machinelearning/examples/examples/LinearDynamicalSystems/NeuralLatents/EstimatingParameters/README.html
+
+## Torch package for the estimation of artificial neural network (Torch.NeuralNetworks) created
+
+We created a Torch package for the estimation of artificial neural networks. We demonstrated this package in:
+
+    - linear regression https://ncguilbeault.github.io/machinelearning/examples/examples/NeuralNetworks/LinearRegression/SimpleOrdinaryLeastSquares/README.html
+    - image classification https://ncguilbeault.github.io/machinelearning/examples/examples/NeuralNetworks/ImageClassification/CustomMnistModel/README.html
+    - inferring depth from images https://ncguilbeault.github.io/machinelearning/examples/examples/NeuralNetworks/ImageClassification/CustomMnistModel/README.html
+    - estimating the parameters and doing inference in a recursive neural network https://ncguilbeault.github.io/machinelearning/examples/examples/NeuralNetworks/RecurrentNeuralNetworks/TrainedOnline/README.html
+
+## Torch package for Principal Components Analysis (PCA.Torch) created
+
+We create a Torch package for principal components analysis. We demonstrated this package in the batch and online classification of MNIST digits:
+
+- batch https://ncguilbeault.github.io/machinelearning/examples/examples/PrincipalComponentAnalysis/BatchFit/README.html
+- online https://ncguilbeault.github.io/machinelearning/examples/examples/PrincipalComponentAnalysis/StreamingOnline/README.html
 
 ## Adaptation of decoder to work with Neuropixels probes (Nick can you send me an URL pointing to a preliminary version of this)
 
