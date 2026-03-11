@@ -4,9 +4,13 @@
 
 We showcased Bonsai and Bonsai.ML at the 2025 Society for Neuroscience (SfN) Conference in San Diego, CA (Booth #3726). The exhibit featured interactive rollups and live, real-time software demonstrations. Engagement spanned a diverse user base, ranging from researchers new to the ecosystem to expert users seeking updates on recent developments. A key outcome included a technical consultation with PopNeuron, who expressed interest in integrating Bonsai.ML into their real-time spike-sorting algorithms for Neuropixels probes https://popneuron.com/spike-sorting/ This consultation highlights the platform's growing utility in high-density electrophysiology workflows.
 
-## Bert de Vries
+## External Seminar and Strategic Consultation: Prof. Bert de Vries
 
-Hosted a visit from Prof. Bert de Vries to the Unit and discussed the feasibility of integrating his reactive probabilistic programming language into Bonsai.ML
+### Briefly describe the activity, please include the intended purpose and any outcomes or impacts that have arisen from it if known. For example, "60 pupils attended for a school visit to the research organisation, which sparked questions and discussion afterwards, and the school reported increased interest in related subject areas."
+
+Prof. Bert de Vries is a Professor in the Signal Processing Systems group of the Eindhoven University of Technology in the Netherlands. He is a leading scientist in reactive inference for real-time applications. His research group has created the Julia software package Rx.Infer We invited him to deliver an external seminar at the Gatsby Computational Neuroscience Unit. We demonstrated to him the real-time inference functionality of Bonsai.ML and discussed with him the feasibility of using the reactive inference approach that his group has developed for real time inference in Bonsai.ML.
+
+His visit was beneficial for us in two main ways. First, we are now in close dialogue with an expert on reactive inference. Second, Prof. de Vries is in contact with a large community of people working in real-time inference, and will help us disseminate Bonsai and Bonsai.ML among people interested in close-loop animal experimentation.
 
 ---
 
@@ -75,6 +79,3 @@ Multi-disciplinary Nature:
 This partnership is inherently multi-disciplinary, bridging Experimental Neuroscience (neural recording in rodents), Signal Processing (neural state inference and LFP analysis), and Software Engineering (reactive programming and cross-language integration between Python and C#).
 
 ---
-
-# Transition of Nick to NeuroGEARS
-
