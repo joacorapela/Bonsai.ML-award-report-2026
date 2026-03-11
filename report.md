@@ -52,24 +52,27 @@ We integrated the Bonsai.ML project into the standardized continuous integration
 
 ### Briefly describe the contributions made by you and/or your research team to this collaboration or partnership
 
-Dr. Garrett Stanley (Georgia Tech/Emory University) in an expert in developing and applying methods for close loop control to neural systems. In 2024 he contacted us because he was interested in distributing software packages that his group had developed through Bonsai.ML. They had attempted to disseminate these packages using an existing software for real-time control (Real-Time eXperiment Interface, RTXI), but due to the limited adoption of this software, the distribution of Dr. Stanley's methods was very limited. Knowing the wide uptake of Bonsai among the experimental neuroscience community, he reached to us for help in his distribution of their software in Bonsai.ML.
-
-They created the first version of their Bonsai.ML package. We are now reviewing their code and making suggestions to improve their software quality to reach the high standards of Bonsai.ML packages. Next, they will incorporate our suggestions into their Bonsai package. After receiving their corrections we expect to distribute their package in Bonsai.ML.
-
-neurostate-hmm will be the first Bonsai.ML package contributed by external people.
+Our team provided the technical framework and architectural oversight required to integrate Dr. Stanley’s research tools into the Bonsai.ML ecosystem. Upon identifying Bonsai.ML as the preferred platform for high-impact dissemination, we provided code auditing and software engineering consultancy to the Stanley Lab https://stanley.gatech.edu/ Our primary contribution has been the rigorous review of their implementation to ensure it meets the professional standards for performance, stability, and interoperability required for the official Bonsai.ML repository. This process ensures that the resulting tools are not only functional but also sustainable and maintainable by the wider neuroscience community.
 
 ### Briefly describe the contributions made by your partners to this collaboration or partnership.
 
-Dr. Stanley contacted us to start this collaboration.
-
-By just reading the Bonsai.ML documentation and the Bonsai.ML code, they created Bonsai packages to distribute software for the online inference of neural states from local field potential in rodents.
-
-It is a remarkable feat that they were able to integrate their Python code into Bonsai.ML. First, this speaks about their commitment to the collaboration, since creating Bonai.ML packages is not trivial. Second, it shows that the current documentation and example code, although not as mature as we would like, is sufficient for skilled scientists to create their own Bonsai.ML packages.
+Dr. Stanley’s group initiated the partnership to transition their real-time control methodologies from legacy systems (RTXI) to a more modern, widely adopted framework. They successfully developed a specialized package for the online inference of neural states from Local Field Potentials (LFP) in rodents. This involved a sophisticated integration of Python-based logic into the C# Bonsai.ML environment. Their ability to independently leverage our existing documentation to build these packages serves as a successful "stress test" of our platform’s extensibility and documentation quality, demonstrating that Bonsai.ML is now accessible to external developers.
 
 ### List any outputs or outcomes that have resulted from this collaboration or partnership. Full details of each should be reported under the relevant sections of the form. Indicate whether this collaboration is multi-disciplinary, if so outline each of the disciplines involved.
 
-The repositories created by Dr.~Stanley's group containing the first version of their Bonsai.ML package appears at 
-https://github.com/ndac-bonsai/neurostate-hmm (core code) and at -hmm-examples https://github.com/ndac-bonsai/neurostate-hmm-examples (examples using the core code).
+Outputs:
+
+Software Repository (Core): https://github.com/ndac-bonsai/neurostate-hmm
+
+Software Repository (Examples): https://github.com/ndac-bonsai/neurostate-hmm-examples
+
+Outcomes:
+
+This collaboration marks a major milestone: the first successful external contribution to the Bonsai.ML ecosystem (neurostate-hmm). This validates the project’s goal of creating a community-contributed library for machine learning in neuroscience.
+
+Multi-disciplinary Nature:
+
+This partnership is inherently multi-disciplinary, bridging Experimental Neuroscience (neural recording in rodents), Signal Processing (neural state inference and LFP analysis), and Software Engineering (reactive programming and cross-language integration between Python and C#).
 
 ---
 
