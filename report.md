@@ -57,10 +57,6 @@ Validation and Documentation:
 The implementation was successfully demonstrated for the estimation of latent variables in neural populations. Technical documentation and example workflows are available at:
 https://ncguilbeault.github.io/machinelearning/examples/examples/LinearDynamicalSystems/NeuralLatents/EstimatingParameters/README.html
 
-## Torch package for learning and inference in Linear Dynamical System (LinearDynamicalSystems.Torch) created
-
-We have previously developed a Linear Dynamical Systems package in Bonsai that used a backend Python package https://github.com/joacorapela/ssm. We have now created a native C# (TorchSharp) implementation of this package and demonstrated it for the estimation of latent variables underlying high-channel-count electrophysiological recordings https://ncguilbeault.github.io/machinelearning/examples/examples/LinearDynamicalSystems/NeuralLatents/EstimatingParameters/README.html
-
 ## Development of a General-Purpose Deep Learning Framework (Torch.NeuralNetworks)
 
 We have developed the Torch.NeuralNetworks package, a comprehensive suite within Bonsai.ML designed for the design, training, and deployment of Artificial Neural Networks (ANNs). By leveraging the TorchSharp engine, this package enables researchers to implement complex deep learning architectures natively within the Bonsai graphical environment.
