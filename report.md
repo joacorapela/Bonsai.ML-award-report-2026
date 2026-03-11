@@ -6,11 +6,18 @@ We showcased Bonsai and Bonsai.ML at the 2025 Society for Neuroscience (SfN) Con
 
 ## External Seminar and Strategic Consultation: Prof. Bert de Vries
 
-### Briefly describe the activity, please include the intended purpose and any outcomes or impacts that have arisen from it if known. For example, "60 pupils attended for a school visit to the research organisation, which sparked questions and discussion afterwards, and the school reported increased interest in related subject areas."
+Activity Description and Purpose:
 
-Prof. Bert de Vries is a Professor in the Signal Processing Systems group of the Eindhoven University of Technology in the Netherlands. He is a leading scientist in reactive inference for real-time applications. His research group has created the Julia software package Rx.Infer We invited him to deliver an external seminar at the Gatsby Computational Neuroscience Unit. We demonstrated to him the real-time inference functionality of Bonsai.ML and discussed with him the feasibility of using the reactive inference approach that his group has developed for real time inference in Bonsai.ML.
+We hosted Prof. Bert de Vries (Eindhoven University of Technology), a global leader in reactive inference and the developer of the RxInfer.jl Julia package, for a seminar and strategic consultation at the Gatsby Computational Neuroscience Unit. The primary purpose was to explore the integration of reactive inference methodologies into the Bonsai.ML framework for real-time experimental control.
 
-His visit was beneficial for us in two main ways. First, we are now in close dialogue with an expert on reactive inference. Second, Prof. de Vries is in contact with a large community of people working in real-time inference, and will help us disseminate Bonsai and Bonsai.ML among people interested in close-loop animal experimentation.
+Outcomes and Impact:
+
+Technical Knowledge Exchange: We conducted live demonstrations of Bonsai.ML’s real-time inference capabilities, leading to a strategic technical consultation on the feasibility of adapting Prof. de Vries’s reactive inference algorithms for low-latency neuroscience applications.
+
+Strategic Network Expansion: This visit established a direct conduit to the Signal Processing Systems community in the Netherlands. Prof. de Vries is actively facilitating the dissemination of Bonsai.ML within his professional network, targeting researchers specifically interested in closed-loop animal experimentation.
+
+Collaborative Roadmap: This engagement has opened a formal dialogue with reactive inference experts, providing our team with high-level theoretical guidance that will inform the future development of the Bonsai.ML codebase, particularly regarding variational inference in real-time streams.
+
 
 ---
 
