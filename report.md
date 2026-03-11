@@ -50,7 +50,7 @@ The ability to estimate models online facilitates closed-loop neuroscience, such
 
 ## Native Implementation of Linear Dynamical Systems (LinearDynamicalSystems.Torch)
 
-We have successfully developed and released LinearDynamicalSystems.Torch, a native C# implementation of Linear Dynamical Systems (LDS) built on the TorchSharp engine. This represents a major technical evolution from our previous iteration, which relied on external Python backends.
+We have successfully developed and released LinearDynamicalSystems.Torch, a native C# implementation of Linear Dynamical Systems (LDS) built on the TorchSharp engine. This represents a major technical evolution from our previous iteration, which relied on external Python backends. By eliminating the overhead of Python interoperation, the new package allows for high-efficiency parameter estimation and latent variable inference directly within the Bonsai environment.
 
 Validation and Documentation:
 
