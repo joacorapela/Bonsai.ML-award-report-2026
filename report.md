@@ -1,4 +1,3 @@
-
 # Dissemination:
 
 ## SfN 2025
@@ -13,11 +12,11 @@ Hosted a visit from Prof. Bert de Vries to the Unit and discussed the feasibilit
 
 # Software
 
-## Published TorchSharp package in Bonsai.ML
+## TorchSharp package released
 
 We developed and released the Bonsai.ML.Torch package (https://bonsai-rx.org/machinelearning/articles/Torch/torch-overview.html), integrating the TorchSharp engine directly into the Bonsai ecosystem. This integration provides users with a high-performance framework for tensor manipulation, complex linear algebra, and the deployment of deep neural networks. By enabling native GPU-accelerated processing within the Bonsai ecosystem, this package significantly lowers the barrier for researchers implementing real-time, AI-driven experimental control.
 
-## Published Decoder package in Bonsai.ML
+## Decoder package released
 
 Neural decoding models are used to reconstruct features of the external world from brain activity, providing a quantitative measure of information contained within neural processes. Traditionally, these models are constructed offline after data collection is complete. We developed a real-time decoder package for Bonsai.ML designed to estimate these models online, directly as experimental data is being streamed.
 
@@ -41,8 +40,6 @@ The ability to estimate models online facilitates closed-loop neuroscience, such
 
 ## Adaptation of decoder to work with Neuropixels probes (Nick can you send me an URL pointing to a preliminary version of this)
 
-## Real-time LDS package for neural latents operating on multi-unit activity
-
 ## CI/CD pipeline
 
 We integrated the Bonsai.ML project into the standardized continuous integration GitHub Actions pipeline used by all other Bonsai projects. Since Bonsai.ML relies so much on examples with large datasets, the standard pipeline had to be extended to allow continuous versioning and validation of the external examples repository. The CI/CD pipeline also takes care of continuous automated deployment of all changes, by packing and publishing preview packages to the GitHub package repository, and publishing tagged releases to the NuGet package repository (https://www.nuget.org/packages/Bonsai.ML). This pipeline significantly reduces the infrastructure development and management effort required to deploy new functionality, facilitates onboarding of externals collaborators, reduces the cost to review and integrate contributions, and overall represents a fundamental investment in the sustainability of the Bonsai.ML project going forward.
@@ -51,15 +48,30 @@ We integrated the Bonsai.ML project into the standardized continuous integration
 
 # Collaborations
 
-## Collaboration with Garrett producing the first externally contributed Bonsai.ML package
+## Collaboration with Dr. Stanley's group (Georgia Tech) integrating into Bonsai.ML his their estimation package
+
+### Briefly describe the contributions made by you and/or your research team to this collaboration or partnership
+
+Dr. Garrett Stanley (Georgia Tech/Emory University) in an expert in developing and applying methods for close loop control to neural systems. In 2024 he contacted us because he was interested in distributing software packages that his group had developed through Bonsai.ML. They had attempted to disseminate these packages using an existing software for real-time control (Real-Time eXperiment Interface, RTXI), but due to the limited adoption of this software, the distribution of Dr. Stanley's methods was very limited. Knowing the wide uptake of Bonsai among the experimental neuroscience community, he reached to us for help in his distribution of their software in Bonsai.ML.
+
+They created the first version of their Bonsai.ML package. We are now reviewing their code and making suggestions to improve their software quality to reach the high standards of Bonsai.ML packages. Next, they will incorporate our suggestions into their Bonsai package. After receiving their corrections we expect to distribute their package in Bonsai.ML.
+
+neurostate-hmm will be the first Bonsai.ML package contributed by external people.
+
+### Briefly describe the contributions made by your partners to this collaboration or partnership.
+
+Dr. Stanley contacted us to start this collaboration.
+
+By just reading the Bonsai.ML documentation and the Bonsai.ML code, they created Bonsai packages to distribute software for the online inference of neural states from local field potential in rodents.
+
+It is a remarkable feat that they were able to integrate their Python code into Bonsai.ML. First, this speaks about their commitment to the collaboration, since creating Bonai.ML packages is not trivial. Second, it shows that the current documentation and example code, although not as mature as we would like, is sufficient for skilled scientists to create their own Bonsai.ML packages.
+
+### List any outputs or outcomes that have resulted from this collaboration or partnership. Full details of each should be reported under the relevant sections of the form. Indicate whether this collaboration is multi-disciplinary, if so outline each of the disciplines involved.
+
+The repositories created by Dr.~Stanley's group containing the first version of their Bonsai.ML package appears at 
+https://github.com/ndac-bonsai/neurostate-hmm (core code) and at -hmm-examples https://github.com/ndac-bonsai/neurostate-hmm-examples (examples using the core code).
 
 ---
 
-# Funding
-
-## 2024 BBSRC-NSF/BIO
-
-## 2025 RSMF round 1
-
-## 2026 RSMF round 2
+# Transition of Nick to NeuroGEARS
 
