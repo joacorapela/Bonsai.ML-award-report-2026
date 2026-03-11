@@ -23,7 +23,9 @@ We developed and released the Bonsai.ML.Torch package (https://bonsai-rx.org/mac
 
 ## Real-time LDS package for neural latents operating on multi-unit activity
 
-## CICD pipeline
+## CI/CD pipeline
+
+We integrated the Bonsai.ML project into the standardized continuous integration GitHub Actions pipeline used by all other Bonsai projects. Since Bonsai.ML relies so much on examples with large datasets, the standard pipeline had to be extended to allow continuous versioning and validation of the external examples repository. The CI/CD pipeline also takes care of continuous automated deployment of all changes, by packing and publishing preview packages to GitHub packages, and publishing tagged releases the NuGet package repository (https://www.nuget.org/packages/Bonsai.ML). This pipeline significantly reduces the infrastructure development and management effort required to deploy new functionality, facilitates onboarding of externals collaborators, reduces the cost to review and integrate contributions, and overall represents a fundamental investment in the sustainability of the Bonsai.ML project going forward.
 
 ---
 
