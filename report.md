@@ -29,10 +29,10 @@ We have validated the decoder across several experimental contexts, transitionin
 2. Online Implementation (Tetrodes): Real-time decoding of position from clusterless marks.
 (Source: https://bonsai-rx.org/machinelearning/examples/examples/PointProcessDecoder/DecodePositionFromStriatumSortedUnits/README.html)
 
-3, Offline Validation (Neuropixels): Decoding position from striatal sorted spikes using high-density probes.
+3. Offline Validation (Neuropixels): Decoding position from striatal sorted spikes using high-density probes.
 (Source: https://bonsai-rx.org/machinelearning/examples/examples/PointProcessDecoder/DecodePositionFromStriatumSortedUnits/README.html)
 
-4 Offline Validation (Tetrodes): Simultaneous position decoding and classification of neural states from hippocampal sorted units.
+4. Offline Validation (Tetrodes): Simultaneous position decoding and classification of neural states from hippocampal sorted units.
 (Source: https://bonsai-rx.org/machinelearning/examples/examples/PointProcessDecoder/ClassifyPositionFromHippocampusSortedUnits/README.html)
 
 ### Scientific and Technical Impact
