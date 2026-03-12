@@ -2,7 +2,7 @@
 
 ## SfN 2025
 
-We showcased Bonsai and Bonsai.ML at the 2025 Society for Neuroscience (SfN) Conference in San Diego, CA (Booth #3726). The exhibit featured interactive rollups and live, real-time software demonstrations. Engagement spanned a diverse user base, ranging from researchers new to the ecosystem to expert users seeking updates on recent developments. A key outcome included a technical consultation with PopNeuron, who expressed interest in integrating Bonsai.ML into their real-time spike-sorting algorithms for Neuropixels probes https://popneuron.com/spike-sorting/ This consultation highlights the platform's growing utility in high-density electrophysiology workflows.
+We showcased Bonsai and Bonsai.ML at the 2025 Society for Neuroscience (SfN) Conference in San Diego, CA (Booth #3726). The exhibit featured a Bonsai.ML rollup and live, real-time software demonstrations of Bonsai.ML packages. Engagement spanned a diverse user base, ranging from researchers new to Bonsai and the ecosystem, to expert users seeking updates on recent developments. A key outcome included a technical consultation with PopNeuron, who expressed interest in integrating Bonsai.ML into their real-time spike-sorting algorithms for Neuropixels probes https://popneuron.com/spike-sorting/. This consultation highlights the platform's growing utility in high-density electrophysiology workflows.
 
 ## External Seminar and Strategic Consultation: Prof. Bert de Vries
 
@@ -24,7 +24,7 @@ Collaborative Roadmap: This engagement has opened a formal dialogue with reactiv
 
 ## TorchSharp package released
 
-We developed and released the Bonsai.ML.Torch package (https://bonsai-rx.org/machinelearning/articles/Torch/torch-overview.html), integrating the TorchSharp engine directly into the Bonsai ecosystem. This integration provides users with a high-performance framework for tensor manipulation, complex linear algebra, and the deployment of deep neural networks. By enabling native GPU-accelerated processing within the Bonsai ecosystem, this package significantly lowers the barrier for researchers implementing real-time, AI-driven experimental control.
+We developed and released the Bonsai.ML.Torch package (https://bonsai-rx.org/machinelearning/articles/Torch/torch-overview.html), integrating the TorchSharp engine directly into the Bonsai ecosystem. This integration provides users with a high-performance framework for tensor manipulation, complex linear algebra, and the deployment of deep neural networks. By enabling native GPU-accelerated processing within the Bonsai ecosystem, this package significantly lowers the barrier for researchers implementing real-time, AI-driven experimental control by unlocking new functionality for Bonsai users to directly compose ML models within Bonsai.
 
 ## Decoder package released
 
@@ -50,7 +50,7 @@ The ability to estimate models online facilitates closed-loop neuroscience, such
 
 ## Native Implementation of Linear Dynamical Systems (Lds.Torch)
 
-We have successfully developed and released Lds.Torch, a native C# implementation of Linear Dynamical Systems (LDS) built on the TorchSharp engine. This represents a major technical evolution from our previous iteration, which relied on external Python backends. By eliminating the overhead of Python interoperation, the new package allows for high-efficiency parameter estimation and latent variable inference directly within the Bonsai environment.
+We have successfully developed and released Lds.Torch, a native C# implementation of Linear Dynamical Systems (LDS) built on the TorchSharp engine. This represents a major technical evolution from our previous iteration, which relied on external Python backends and eliminates the need for multiple software environments. By eliminating the overhead of Python interoperation, the new package allows for high-efficiency parameter estimation and latent variable inference directly within the Bonsai environment.
 
 Validation and Documentation:
 
@@ -96,6 +96,8 @@ A key innovation of this package is the support for both traditional and real-ti
 By implementing PCA natively within the Bonsai.ML.Torch framework, we allow researchers to perform complex data transformations without leaving the Bonsai ecosystem. The online implementation, in particular, overcomes a major bottleneck in systems neuroscience by allowing for the real-time visualization and manipulation of neural manifolds.
 
 ## Adaptation of decoder to work with Neuropixels probes (Nick can you send me an URL pointing to a preliminary version of this)
+
+Getting the decoder to work with Neuropixels data was a challenge, since the original approach was designed to work for tetrodes. However, research shows that the decoder can be made to work with Neuropixels data in a clusterless way by estimating the location of spikes on the probe (https://www.biorxiv.org/content/10.1101/2023.09.21.558869v1). To this end, we explored integrating a scalable spike localization approach based on a VAE architecture that can estimate the location of spikes in neuropixels data: (https://arxiv.org/pdf/1905.12375). We found success in running the model in Bonsai with data that were preprocessed with the external Python package and saved to a file on disk. We also developed a full pipeline in Bonsai for spike detection and spike augmentation in Bonsai. Future work will look towards connecting these 2 approaches to allow seamlessly streaming directly from Bonsai Neuropixels data, and performing online spike detection, preprocessing, and VAE spike localization for online fitting with the decoder.
 
 ## CI/CD pipeline
 
